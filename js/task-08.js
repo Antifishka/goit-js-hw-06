@@ -17,11 +17,10 @@ function onFormSubmit(event) {
         password,
     };
 
-    console.log(formData); 
-
     if (mail === "" || password === "") {
-        alert("Всі поля повинні бути заповнені");
+        return alert("Всі поля повинні бути заповнені");
     }
 
+    console.log(formData); 
     event.currentTarget.reset();
 }
