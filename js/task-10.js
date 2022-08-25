@@ -27,8 +27,9 @@ function createBoxes(amount) {
   
   console.log(boxes);
   refs.boxesContainer.append(...boxes);
+  refs.input.value = '';
 }
 
 function destroyBoxes() {
-  refs.boxesContainer.remove();
+  refs.boxesContainer.innerHTML = '';
 }
